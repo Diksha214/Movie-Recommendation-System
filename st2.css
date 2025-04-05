@@ -1,0 +1,83 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(3.jpeg);
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6a11cb;
+}
+
+/* Icons */
+.username-input i,
+.email-input i,
+.password-input i {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 14px;
+    color: #6a11cb;
+}
+
+/* Button */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.signup-btn:hover {
+    background-color: #ad25fc;
+}
+
+/* Alternative Login */
+.alternative-login p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alternative-login span {
+    color: #7111cbc4;
+    cursor: pointer;
+    text-decoration: underline;
+}

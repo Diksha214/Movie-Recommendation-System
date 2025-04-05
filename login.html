@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <section>
+        <h1>Login</h1>
+        <div class="login-form">
+            <div class="username-input">
+                <i class="fas fa-user"></i>
+                <input type="email" placeholder="Enter username or email" id="username">
+            </div>
+
+            <div class="password-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter password" id="password">
+            </div>
+
+            <button class="login-btn" onclick="handleLogin()">LOGIN</button>
+
+            <div class="alternative-signup">
+                <p>Not a member? <span onclick="redirectToSignup()">Sign-up</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function handleLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                alert('Successfully Logged In!');
+                window.location.href = '1.html';
+            } else {
+                alert('Please fill in all fields!');
+            }
+        }
+
+        function redirectToSignup() {
+            window.location.href = 'signup.html';
+        }
+        
+    </script>
+</body>
+</html>

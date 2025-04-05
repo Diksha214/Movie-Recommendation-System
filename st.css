@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f21a;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background: #fffffff4;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #158915;
+}
+
+/* Input Fields */
+.username-input, .password-input {
+    display: flex;
+    align-items: center;
+    background: #fcfdfc;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.username-input i, .password-input i {
+    margin-right: 8px;
+    color: #f5f1f1;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+
+.login-btn:hover {
+    background-color: #378a3b;
+}
+
+/* Signup Text */
+.alternative-signup {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alternative-signup span {
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: bold;
+}

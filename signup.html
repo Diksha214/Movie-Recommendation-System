@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="st2.css">
+</head>
+<body>
+    <section>
+        <h1>Signup</h1>
+        <div class="signup-form">
+          
+            <div class="username-input">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Type your username" id="signup-username">
+            </div>
+
+            
+            <div class="email-input">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Type your email" id="signup-email">
+            </div>
+
+            
+            <div class="password-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Create your password" id="signup-password">
+            </div>
+
+            <button class="signup-btn" onclick="handleSignup()">SIGN UP</button>
+
+            <div class="alternative-login">
+                <p>Already have an account? <span onclick="redirectToLogin()">Login</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function handleSignup() {
+            const username = document.getElementById('signup-username').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            if (username && password) {
+                localStorage.setItem('username', username);
+                localStorage.setItem('email', email);
+                localStorage.setItem('password', password);
+                alert('Signup Successful!');
+                window.location.href = 'login.html'; // Redirect to login page
+            } else {
+                alert('Please fill in all fields!');
+            }
+        }
+
+
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

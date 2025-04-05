@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Recommended Movies</h1>
+    <div id="recommendations"></div>
+    <a href="thankyou.html" class="btn">Go to Thank You Page</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const movieId = localStorage.getItem('selectedMovieId');
+    if (movieId) {
+      fetchRecommendations(movieId);
+    } else {
+      document.getElementById('recommendations').innerHTML = "<p>No movie selected.</p>";
+    }
+  </script>
+</body>
+</html>
